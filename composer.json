@@ -1,0 +1,16 @@
+{
+    "name": "anar/test",
+    "description": "test study project",
+    "authors": [
+        {
+            "name": "Anar",
+            "email": "zarubaxa@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.0",
+        "slim/http": "^0.8.0",
+        "slim/psr7": "^0.6.0",
+        "slim/php-view": "^2.2"
+    }
+}
