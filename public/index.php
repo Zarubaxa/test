@@ -1,6 +1,6 @@
 <?php
 use Slim\Views\PhpRenderer;
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $app = new Slim\App();
 $container = $app->getContainer();
