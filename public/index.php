@@ -3,11 +3,12 @@ use Slim\Views\PhpRenderer;
 require __DIR__ . '/../vendor/autoload.php';
 
 
-$app = Slim\AppFactor::creates();
+$app = AppFactory::create();
+$app->addErrorMiddleware(true, true, true);
 
-$app->get('/about/{name}', function ($request, $response) {
+$app->get('/about/{name}', function ($request, $response, $args) {
     $renderer = new PhpRenderer('../templates');
-    return $renderer->render($response, "about.phtml");
+    return $renderer->render($response, "about.phtml", $args);
 });
 
 $app->run();
